@@ -1,0 +1,27 @@
+{
+  "name": "pancakes",
+  "version": "1.0.0",
+  "description": "UI for running pancake flipping tests",
+  "main": "index.js",
+  "scripts": {
+    "flip": "node ./src/index.js --",
+    "test": "NODE_ENV=test jest --watch"
+  },
+  "keywords": [
+    "pancakes",
+    "flapjacks"
+  ],
+  "author": "shadymoses",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.5.0",
+    "@babel/core": "^7.5.4",
+    "@babel/plugin-proposal-class-properties": "^7.5.0",
+    "@babel/plugin-syntax-object-rest-spread": "^7.2.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.5.0",
+    "@babel/preset-env": "^7.5.4",
+    "chalk": "^2.4.2",
+    "jest": "^24.8.0",
+    "jest-dom": "^4.0.0"
+  }
+}
