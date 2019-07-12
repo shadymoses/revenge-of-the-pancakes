@@ -1,30 +1,28 @@
 import flipPancakes from '../flip-pancakes'
 
-const errMsg = 'Input strings should only contain the characters + or -'
-
 describe('flip-pancakes', () => {
   test('bails on invalid strings', () => {
     expect(() => {
       flipPancakes('')
-    }).toThrow(errMsg)
+    }).toThrow()
     expect(() => {
       flipPancakes()
-    }).toThrow(errMsg)
+    }).toThrow()
     expect(() => {
       flipPancakes([])
-    }).toThrow(errMsg)
+    }).toThrow()
     expect(() => {
       flipPancakes({})
-    }).toThrow(errMsg)
+    }).toThrow()
     expect(() => {
       flipPancakes(true)
-    }).toThrow(errMsg)
+    }).toThrow()
     expect(() => {
       flipPancakes(0)
-    }).toThrow(errMsg)
+    }).toThrow()
     expect(() => {
       flipPancakes('--_+')
-    }).toThrow(errMsg)
+    }).toThrow()
   })
 
   test('0 moves', () => {

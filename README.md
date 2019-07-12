@@ -12,9 +12,8 @@ You can get more verbose output that will show the series of moves made by passi
 $ pancakes +-- -++ +-+-+- --verbose
 ```
 
-To run the jest tests:
+To run the jest tests (after installing):
 
 ```bash
-$ npm install
 $ npm test
 ```

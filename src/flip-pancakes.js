@@ -17,7 +17,9 @@ const makeAMove = require('./make-a-move')
 function flipPancakes(str) {
   // bail on invalid input
   if (typeof str !== 'string' || !str || /[^+-]/.test(str)) {
-    throw new Error('Input strings should only contain the characters + or -')
+    throw new Error(
+      `Invalid string ${str}. Inputs should only contain the characters + or -.`,
+    )
   }
   return formatResult(makeAMove(str))
 }
