@@ -6,6 +6,10 @@ This is packaged as a simple cli tool. To run the project:
 2. `npm install -g`
 3. Run the `pancakes` command and pass a series of pancake strings (eg +- +-+-+-)
 
+```bash
+$ pancakes ++- +-+-+- --+-+--++ -
+```
+
 You can get more verbose output that will show the series of moves made by passing `--verbose` as an argument.
 
 ```bash
