@@ -4,8 +4,10 @@
   "description": "UI for running pancake flipping tests",
   "main": "index.js",
   "scripts": {
-    "flip": "node ./src/index.js --",
     "test": "NODE_ENV=test jest --watch"
+  },
+  "bin": {
+    "pancakes": "./src/index.js"
   },
   "keywords": [
     "pancakes",
