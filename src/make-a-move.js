@@ -9,18 +9,18 @@ const flipSlice = require('./flip-slice')
  * @returns {string[]} The complete array of moves required to resolve the string.
  */
 function makeAMove(str, moves = []) {
-  // all +s = all done
+  // all + = all done
   if (/^\++$/.test(str)) return moves
   // track next index to use to flip
   let depth
   if (/^-+$/.test(str)) {
-    // all -s (flip that whole mother)
+    // all - (flip that whole mother)
     depth = str.length
   } else if (/^\++(?=-)/.test(str)) {
-    // a string of +s followed by a -, flip all the +s
+    // a string of + followed by a -, flip all the +
     depth = str.indexOf('-')
   } else if (/^-+\+/.test(str)) {
-    // a string of -s followed by a +, flip all the -s
+    // a string of - followed by a +, flip all the -
     depth = str.indexOf('+')
   }
   let nextStr = flipSlice(str, depth)
